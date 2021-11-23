@@ -1,0 +1,33 @@
+// convert decimal to binary
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		long n=sc.nextInt();
+		long ans=0;
+		int i=0;
+		while(n!=0){
+		    long bit=n & 1;
+		    ans=bit * (long)Math.pow(10,i) + ans;
+		    n=n>>1;
+		    i++;
+		    
+		}
+		System.out.print(ans+" ");
+	}
+}
+
+Input:-
+    5
+Output:
+    101
+Input:-
+    10
+Output:
+    1010
+Input:-
+    1000
+Output:
+    1111101000 
