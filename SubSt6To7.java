@@ -1,7 +1,28 @@
+/*
+Example 1:
+    Input: 
+        7
+        1 2 5 6 8 7 9
+    Output:
+        17
+Example 2:
+    Input: 
+        7
+        1 2 6 4 6 7 7
+    Output:
+        3
+Example 3:
+    Input: 
+        5
+        1 2 7 6 5
+    Output:
+        21
+
+*/
 package Array;
 import java.util.*;
 public class SubSt6To7 {
-    static int Sub67(int arr[],int n){      // 1 2 5 6 8 7 9 ind6= 3
+    static int Sub67(int arr[],int n){      // 1 2 5 6 8 7 9 ind6= 3 ,ind7=5
         int sum=0;                          // 0 1 2 3 4 5 6
         int ind6=0,ind7=0;
         for(int i=0;i<n;i++){
